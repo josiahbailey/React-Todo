@@ -14,7 +14,7 @@ const Todo = ({todo, toggleComplete}) => {
         if (todo.task !== undefined && todo.task !== '') {
             return (
             <div onClick={() => toggleComplete(todo.id)} className={checkComplete()} id={todo.id}>
-            {todo.task}
+            <p className='todoP'>{todo.task}</p>
             </div>
             )
         }

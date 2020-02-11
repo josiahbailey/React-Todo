@@ -18,6 +18,10 @@
     margin-top: 5%;
 }
 
+.todoP {
+    padding: 5% 0;
+}
+
 .completed {
     text-decoration: line-through;
     background: pink;
