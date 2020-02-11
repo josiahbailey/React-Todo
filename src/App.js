@@ -23,6 +23,7 @@ class App extends React.Component {
       todoList: todoData
     }
   }
+
   clearComplete = () => {
     const newList = this.state.todoList.filter(todo => todo.completed === false && todo.task !== undefined && todo.task !== '')
     this.addNewTodo()
@@ -30,6 +31,7 @@ class App extends React.Component {
       todoList: newList
     })
   }
+
   toggleComplete = id => {
     const newList = this.state.todoList.map(todo => {
       if (todo.id === id) {
@@ -45,6 +47,7 @@ class App extends React.Component {
       todoList: newList
     })
   }
+
   addNewTodo = todo => {
     const newTodo = {
       task: todo,
@@ -55,6 +58,7 @@ class App extends React.Component {
       todoList: [...this.state.todoList, newTodo]
     })
   }
+  
   render() {
     return (
       <div className='App'>
