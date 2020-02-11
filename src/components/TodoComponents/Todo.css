@@ -1,0 +1,13 @@
+.todoDiv {
+    width: 20%;
+    height: 5vh;
+    text-align: center;
+    background: lightskyblue;
+    color: black;
+    margin: 2%;
+}
+
+.completed {
+    text-decoration: line-through;
+    background: pink;
+}

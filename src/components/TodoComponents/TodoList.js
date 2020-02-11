@@ -1,11 +1,11 @@
 import React from 'react';
 import Todo from './Todo'
 
-const TodoList = ({list}) => {
+const TodoList = ({list, toggleComplete}) => {
     return (  
         <div>TodoList
-            {list.map(task => (
-                <Todo key={task.id} todo={task} />
+            {list.map(todo => (
+                <Todo toggleComplete={toggleComplete} key={todo.id} todo={todo} />
             ))}
         </div>
     );

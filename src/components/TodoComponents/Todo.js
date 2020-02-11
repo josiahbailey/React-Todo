@@ -1,8 +1,21 @@
 import React from 'react';
+import './Todo.css'
 
-const Todo = ({todo}) => {
+const Todo = ({todo, toggleComplete}) => {
+    //const id = todo.id
+    const checkComplete = () => {
+        if (todo.completed === true) {
+            return 'completed todoDiv'
+        } else {
+            return 'todoDiv'
+        }
+    }
+    
     return (  
-        <div>{todo.task}</div>
+        <div onClick={() => toggleComplete(todo.id)} className={checkComplete()}>
+        
+        {todo.task}
+        </div>
     );
 }
  
