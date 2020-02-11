@@ -10,10 +10,8 @@ const Todo = ({todo, toggleComplete}) => {
             return 'todoDiv'
         }
     }
-    
     return (  
         <div onClick={() => toggleComplete(todo.id)} className={checkComplete()}>
-        
         {todo.task}
         </div>
     );

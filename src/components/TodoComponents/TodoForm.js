@@ -13,7 +13,7 @@ const TodoForm = ({newTodo, clearComplete}) => {
     return (  
         <form onSubmit={handleSubmit}>
             <input value={todo} onChange={handleChange} type='text' placeholder='New Todo Item' />
-            <button onCLick={clearComplete}>Clear Completed</button>
+            <button onClick={clearComplete}>Clear Completed</button>
         </form>
     );
 }

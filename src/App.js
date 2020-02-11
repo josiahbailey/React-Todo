@@ -24,11 +24,8 @@ class App extends React.Component {
     }
   }
   clearComplete = () => {
-    const newList = this.state.todoList.filter(todo => {
-      if (todo.completed === false) {
-        return todo
-      } 
-    })
+    const newList = this.state.todoList.filter(todo => todo.completed === false)
+    console.log(newList) 
     this.setState({
       todoList: newList
     })
