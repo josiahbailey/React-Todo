@@ -1,11 +1,21 @@
+.App {
+    text-align: center;
+}
+
+.list {
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .todoDiv {
-    width: 20%;
+    width: 200px;
     height: 5vh;
     text-align: center;
     background: lightskyblue;
     color: black;
-    margin: 2%;
+    margin-top: 5%;
 }
 
 .completed {

@@ -10,9 +10,18 @@ const Todo = ({todo, toggleComplete}) => {
             return 'todoDiv'
         }
     }
+    const renderCard = () => {
+        if (todo.task !== undefined && todo.task !== '') {
+            return (
+            <div onClick={() => toggleComplete(todo.id)} className={checkComplete()} id={todo.id}>
+            {todo.task}
+            </div>
+            )
+        }
+    }
     return (  
-        <div onClick={() => toggleComplete(todo.id)} className={checkComplete()}>
-        {todo.task}
+        <div>
+            {renderCard()}
         </div>
     );
 }
